@@ -1,5 +1,6 @@
 use rand::{thread_rng, Rng};
 
+#[derive(Debug, Clone)]
 pub struct Matrix {
     pub rows: usize,
     pub cols: usize,
@@ -80,7 +81,7 @@ impl Matrix {
 
     pub fn substract(&mut self, other: &Matrix) -> Matrix {
         if self.rows != other.rows || self.cols != other.cols {
-            panic!("Columns and rows of A must match columns and rows of B, otherwiase they can't be added");
+            panic!("Columns and rows of A must match columns and rows of B, otherwiase they can't be substrated");
         }
 
         let mut res: Matrix = Matrix::zeros(self.rows, other.cols);
@@ -88,6 +89,17 @@ impl Matrix {
         for i in 0..self.rows {
             for j in 0..self.cols {
                 res.data[i][j] = self.data[i][j] - other.data[i][j];
+            }
+        }
+        res
+    }
+
+    pub fn transpose(&mut self) -> Matrix {
+        let mut res: Matrix = Matrix::zeros(self.cols, self.rows);
+
+        for i in 0..self.rows {
+            for j in 0..self.cols {
+                res.data[j][i] = self.data[i][j];
             }
         }
         res
