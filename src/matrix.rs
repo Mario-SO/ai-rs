@@ -1,6 +1,6 @@
 use rand::{thread_rng, Rng};
 
-#[derive(Debug, Clone)]
+#[derive(Clone)]
 pub struct Matrix {
     pub rows: usize,
     pub cols: usize,
@@ -103,5 +103,25 @@ impl Matrix {
             }
         }
         res
+    }
+
+    // I would have never come up with this on my own
+
+    pub fn from(data: Vec<Vec<f64>>) -> Matrix {
+        Matrix {
+            rows: data.len(),
+            cols: data[0].len(),
+            data,
+        }
+    }
+
+    pub fn map(&self, function: &dyn Fn(f64) -> f64) -> Matrix {
+        Matrix::from(
+            (self.data)
+                .clone()
+                .into_iter()
+                .map(|row| row.into_iter().map(|value| function(value)).collect())
+                .collect(),
+        )
     }
 }
