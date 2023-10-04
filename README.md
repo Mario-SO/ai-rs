@@ -10,6 +10,8 @@ I didn't reinvent the wheel (or neuron) from scratch. Here's what I used to make
 
 - **3blue1brown YouTube Series 🎥**: I owe a debt of gratitude to Grant Sanderson for his amazing explainer videos. Dive into the world of neural networks with his YouTube series. 🌟
 
+- **Articles 📝**: [This one](https://medium.com/coinmonks/representing-neural-network-with-vectors-and-matrices-c6b0e64db9fb) and [this one](https://datascience.stackexchange.com/questions/75855/what-types-of-matrix-multiplication-are-used-in-machine-learning-when-are-they)
+
 - **A Sh*t Ton of Googling 🌐**: Let's be real, this is where all the real learning happens. I've googled my way through errors, confusion, and eureka moments. 🕵️‍♂️💡
 
 
