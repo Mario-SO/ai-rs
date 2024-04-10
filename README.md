@@ -16,6 +16,6 @@ I didn't reinvent the wheel (or neuron) from scratch. Here's what I used to make
 
 
 ## 📝 Important note
-Learning Rust is hard, AI also collaborated on making this (copilot) so go ahead, read something you are curiour about and try coding it. 👷‍♂️
+Learning Rust is hard, AI also collaborated on making this (copilot) so go ahead, read something you are curious about and try coding it. 👷‍♂️
 
 #### PS: I still have no idea on how to properly use lifetimes 🥲 and can barely code anything more complex than this in rust hehe.
